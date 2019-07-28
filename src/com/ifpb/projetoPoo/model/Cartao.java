@@ -1,9 +1,10 @@
 package com.ifpb.projetoPoo.model;
 
 import com.ifpb.enumeration.BandeiraCartao;
+import java.io.Serializable;
 import java.util.Objects;
 
-public class Cartao {
+public class Cartao implements Serializable{
     private String cpfCliente;
     private String titular;
     private int numero;
