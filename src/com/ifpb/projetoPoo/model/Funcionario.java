@@ -1,6 +1,6 @@
 package com.ifpb.projetoPoo.model;
 
-import com.ifpb.enumeration.TipoDeCargo;
+import com.ifpb.projetoPoo.enumeration.TipoDeCargo;
 import java.io.Serializable;
 import java.util.Objects;
 

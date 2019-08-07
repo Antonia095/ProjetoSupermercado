@@ -1,6 +1,6 @@
 package com.ifpb.projetoPoo.model;
 
-import com.ifpb.enumeration.TipoDeCargo;
+import com.ifpb.projetoPoo.enumeration.TipoDeCargo;
 
 public class AtualizarFuncionario  extends Funcionario{
     

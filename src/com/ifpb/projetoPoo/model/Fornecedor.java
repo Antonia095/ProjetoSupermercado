@@ -1,6 +1,6 @@
 package com.ifpb.projetoPoo.model;
 
-import com.ifpb.enumeration.TipoDeProduto;
+import com.ifpb.projetoPoo.enumeration.TipoDeProduto;
 import java.util.Objects;
 
 public class Fornecedor {

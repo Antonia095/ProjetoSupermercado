@@ -1,6 +1,6 @@
 package com.ifpb.projetoPoo.model;
 
-import com.ifpb.enumeration.BandeiraCartao;
+import com.ifpb.projetoPoo.enumeration.BandeiraCartao;
 import java.io.Serializable;
 import java.util.Objects;
 
