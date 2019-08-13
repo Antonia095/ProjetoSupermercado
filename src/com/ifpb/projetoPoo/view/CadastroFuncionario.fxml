@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="HyperlinkSair" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #E6E6E6;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ifpb.projetoPoo.control.CadastroFuncionarioController">
+   <children>
+      <ImageView fitHeight="256.0" fitWidth="306.0" layoutX="172.0" layoutY="64.0" opacity="0.21" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/imagemFundo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="198.0" layoutY="26.0" text="Cadastro Funcionário" textAlignment="CENTER" textFill="#474343eb">
+         <font>
+            <Font name="DejaVu Sans Mono Bold" size="17.0" />
+         </font>
+      </Label>
+      <Hyperlink fx:id="LinkSair" layoutX="550.0" layoutY="15.0" text="Sair" textFill="#2b2828" />
+      <Label layoutX="165.0" layoutY="76.0" text="Nome" textFill="#474343" />
+      <Label layoutX="172.0" layoutY="115.0" text="CPF" textFill="#474343" />
+      <Label layoutX="174.0" layoutY="152.0" text="RG" textFill="#474343" />
+      <Label layoutX="164.0" layoutY="185.0" text="Telefone" textFill="#474343" />
+      <Label layoutX="93.0" layoutY="221.0" text="Endereço" textFill="#474343" />
+      <Label layoutX="315.0" layoutY="221.0" text="Bairro" textFill="#474343" />
+      <Label layoutX="101.0" layoutY="268.0" text="Cidade" textFill="#474343" />
+      <Label alignment="CENTER" layoutX="96.0" layoutY="296.0" prefHeight="49.0" prefWidth="193.0" text="Senha de Acesso ao sistema" textFill="#474343" />
+      <Label layoutX="315.0" layoutY="268.0" text="Cargo" textFill="#474343" />
+      <TextField fx:id="CampoNome" layoutX="240.0" layoutY="71.0" prefHeight="25.0" prefWidth="150.0" promptText="Digite seu nome" />
+      <TextField fx:id="CampoCpf" layoutX="240.0" layoutY="110.0" prefHeight="25.0" prefWidth="150.0" promptText="Digite seu CPF" />
+      <TextField fx:id="CampoRg" layoutX="240.0" layoutY="147.0" prefHeight="25.0" prefWidth="150.0" promptText="Digite seu RG" />
+      <TextField fx:id="CampoTelefone" layoutX="240.0" layoutY="180.0" prefHeight="25.0" prefWidth="150.0" promptText="Digite seu telefone" />
+      <TextField fx:id="CampoEndereco" layoutX="156.0" layoutY="216.0" prefHeight="25.0" prefWidth="150.0" promptText="Digite seu endereço" />
+      <TextField fx:id="CampoBairro" layoutX="368.0" layoutY="216.0" prefHeight="25.0" prefWidth="150.0" promptText="Digite seu bairro" />
+      <TextField fx:id="CampoCidade" layoutX="156.0" layoutY="263.0" prefHeight="25.0" prefWidth="143.0" promptText="Digite sua cidade" />
+      <ComboBox fx:id="CamboBoxTipoCargo" layoutX="368.0" layoutY="263.0" prefWidth="150.0" promptText="Tipo de cargo" />
+      <PasswordField fx:id="CampoSenha" layoutX="301.0" layoutY="308.0" prefHeight="25.0" prefWidth="129.0" promptText="Digite sua senha" />
+      <Button fx:id="ButtonCadastrarFuncionario" layoutX="443.0" layoutY="308.0" mnemonicParsing="false" opacity="0.8" style="-fx-background-color: #FE2E2E;" text="Cadastrar" textFill="#f8f3f3" />
+   </children>
+</AnchorPane>

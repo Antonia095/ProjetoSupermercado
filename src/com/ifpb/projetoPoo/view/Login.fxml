@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ifpb.projetoPoo.control.LoginController">
+   <children>
+      <AnchorPane fx:id="anchorPane" prefHeight="399.0" prefWidth="594.0" style="-fx-background-color: #E6E6E6;">
+         <children>
+            <MenuBar opacity="0.8" prefHeight="47.0" prefWidth="600.0" style="-fx-background-color: #FE2E2E;">
+              <menus>
+                <Menu fx:id="menuItemEntrar" mnemonicParsing="false" text="Entrar" />
+                <Menu fx:id="menuItemCadastrar" mnemonicParsing="false" text="Cadastrar" />
+              </menus>
+            </MenuBar>
+            <Label layoutX="238.0" layoutY="94.0" text="Bem vindo!" textFill="#403d3d">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <TextField fx:id="CampoCpf" layoutX="208.0" layoutY="136.0" promptText="Digite seu CPF" />
+            <PasswordField fx:id="CampoSenha" layoutX="208.0" layoutY="187.0" promptText="Digite sua senha" />
+            <Button fx:id="buttonEntrar" layoutX="209.0" layoutY="235.0" mnemonicParsing="false" style="-fx-background-color: #403d3d;" text="Entrar" textFill="#f8f7f7" />
+            <Button fx:id="buttonCadastrar" layoutX="293.0" layoutY="235.0" mnemonicParsing="false" onAction="#btActionCadastrar" style="-fx-background-color: #403d3d;" text="Cadastrar" textFill="#f5efef" />
+            <ImageView fitHeight="43.0" fitWidth="49.0" layoutX="554.0" layoutY="1.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/imagemMenu.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </children>
+</VBox>
