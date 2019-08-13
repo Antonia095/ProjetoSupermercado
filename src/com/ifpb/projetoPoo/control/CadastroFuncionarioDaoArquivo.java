@@ -15,7 +15,7 @@ public class CadastroFuncionarioDaoArquivo implements CadastroFuncionarioDao{
     private File arquivo;
     
     public CadastroFuncionarioDaoArquivo() throws IOException {
-        arquivo = new File("Funcionario.bin");
+        arquivo = new File("Funcionario.txt");
         
         if(!arquivo.exists()){
             arquivo.createNewFile();
@@ -56,7 +56,7 @@ public class CadastroFuncionarioDaoArquivo implements CadastroFuncionarioDao{
             if(f.getCpf().equals(cpf) && f.getSenha().equals(senha)){
                 return f;
             }
-        }
+            }
         return null;
     }
         
