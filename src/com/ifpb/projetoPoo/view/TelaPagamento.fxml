@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="539.0" style="-fx-background-color: #E6E6E6;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="com.ifpb.projetoPoo.control.TelaPagamentoController">
+   <children>
+      <Pane fx:id="painel" layoutX="187.0" layoutY="14.0" prefHeight="316.0" prefWidth="316.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #2E2E2E;" />
+      <Label layoutX="30.0" layoutY="14.0" text="Pagamento">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="radioButtonDinheiro" layoutX="30.0" layoutY="46.0" mnemonicParsing="false" text="Dinheiro" />
+      <RadioButton fx:id="radioButtonCartao" layoutX="30.0" layoutY="83.0" mnemonicParsing="false" text="Cartão" />
+      <Button fx:id="buttonOk" layoutX="305.0" layoutY="345.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: #2E2E2E;" text="OK" textFill="#f5f5f5" />
+   </children>
+</AnchorPane>

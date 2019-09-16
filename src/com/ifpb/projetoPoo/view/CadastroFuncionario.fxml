@@ -9,7 +9,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane fx:id="HyperlinkSair" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #E6E6E6;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ifpb.projetoPoo.control.CadastroFuncionarioController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #E6E6E6;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ifpb.projetoPoo.controller.CadastroFuncionarioController">
    <children>
       <ImageView fitHeight="256.0" fitWidth="306.0" layoutX="172.0" layoutY="64.0" opacity="0.21" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -21,25 +21,27 @@
             <Font name="DejaVu Sans Mono Bold" size="17.0" />
          </font>
       </Label>
-      <Hyperlink fx:id="LinkSair" layoutX="550.0" layoutY="15.0" text="Sair" textFill="#2b2828" />
-      <Label layoutX="165.0" layoutY="76.0" text="Nome" textFill="#474343" />
-      <Label layoutX="172.0" layoutY="115.0" text="CPF" textFill="#474343" />
+      <Label layoutX="165.0" layoutY="115.0" text="Nome" textFill="#474343" />
+      <Label layoutX="172.0" layoutY="76.0" text="CPF" textFill="#474343" />
       <Label layoutX="174.0" layoutY="152.0" text="RG" textFill="#474343" />
-      <Label layoutX="164.0" layoutY="185.0" text="Telefone" textFill="#474343" />
-      <Label layoutX="93.0" layoutY="221.0" text="Endereço" textFill="#474343" />
-      <Label layoutX="315.0" layoutY="221.0" text="Bairro" textFill="#474343" />
-      <Label layoutX="101.0" layoutY="268.0" text="Cidade" textFill="#474343" />
-      <Label alignment="CENTER" layoutX="96.0" layoutY="296.0" prefHeight="49.0" prefWidth="193.0" text="Senha de Acesso ao sistema" textFill="#474343" />
-      <Label layoutX="315.0" layoutY="268.0" text="Cargo" textFill="#474343" />
-      <TextField fx:id="CampoNome" layoutX="240.0" layoutY="71.0" prefHeight="25.0" prefWidth="150.0" promptText="Digite seu nome" />
-      <TextField fx:id="CampoCpf" layoutX="240.0" layoutY="110.0" prefHeight="25.0" prefWidth="150.0" promptText="Digite seu CPF" />
-      <TextField fx:id="CampoRg" layoutX="240.0" layoutY="147.0" prefHeight="25.0" prefWidth="150.0" promptText="Digite seu RG" />
-      <TextField fx:id="CampoTelefone" layoutX="240.0" layoutY="180.0" prefHeight="25.0" prefWidth="150.0" promptText="Digite seu telefone" />
-      <TextField fx:id="CampoEndereco" layoutX="156.0" layoutY="216.0" prefHeight="25.0" prefWidth="150.0" promptText="Digite seu endereço" />
-      <TextField fx:id="CampoBairro" layoutX="368.0" layoutY="216.0" prefHeight="25.0" prefWidth="150.0" promptText="Digite seu bairro" />
-      <TextField fx:id="CampoCidade" layoutX="156.0" layoutY="263.0" prefHeight="25.0" prefWidth="143.0" promptText="Digite sua cidade" />
-      <ComboBox fx:id="CamboBoxTipoCargo" layoutX="368.0" layoutY="263.0" prefWidth="150.0" promptText="Tipo de cargo" />
-      <PasswordField fx:id="CampoSenha" layoutX="301.0" layoutY="308.0" prefHeight="25.0" prefWidth="129.0" promptText="Digite sua senha" />
-      <Button fx:id="ButtonCadastrarFuncionario" layoutX="443.0" layoutY="308.0" mnemonicParsing="false" opacity="0.8" style="-fx-background-color: #FE2E2E;" text="Cadastrar" textFill="#f8f3f3" />
+      <Label layoutX="93.0" layoutY="185.0" text="Telefone" textFill="#474343" />
+      <Label layoutX="304.0" layoutY="185.0" text="Endereço" textFill="#474343" />
+      <Label layoutX="102.0" layoutY="217.0" text="Bairro" textFill="#474343" />
+      <Label layoutX="299.0" layoutY="217.0" text="Cidade" textFill="#474343" />
+      <Label layoutX="102.0" layoutY="256.0" text="Cargo" textFill="#474343" />
+      <TextField fx:id="campoNome" layoutX="237.0" layoutY="110.0" prefHeight="25.0" prefWidth="150.0" promptText="Digite seu nome" />
+      <TextField fx:id="campoCpf" layoutX="240.0" layoutY="71.0" prefHeight="25.0" prefWidth="150.0" promptText="Digite seu CPF" />
+      <TextField fx:id="campoRg" layoutX="237.0" layoutY="147.0" prefHeight="25.0" prefWidth="150.0" promptText="Digite seu RG" />
+      <TextField fx:id="campoTelefone" layoutX="153.0" layoutY="180.0" prefHeight="25.0" prefWidth="143.0" promptText="Digite seu telefone" />
+      <TextField fx:id="campoEndereco" layoutX="368.0" layoutY="180.0" prefHeight="25.0" prefWidth="150.0" promptText="Digite seu endereço" />
+      <TextField fx:id="campoBairro" layoutX="153.0" layoutY="212.0" prefHeight="25.0" prefWidth="143.0" promptText="Digite seu bairro" />
+      <TextField fx:id="campoCidade" layoutX="366.0" layoutY="212.0" prefHeight="25.0" prefWidth="150.0" promptText="Digite sua cidade" />
+      <Button fx:id="btCadastrar" layoutX="144.0" layoutY="320.0" mnemonicParsing="false" opacity="0.8" style="-fx-background-color: #FE2E2E;" text="Cadastrar" textFill="#f8f3f3" />
+      <Button fx:id="btBuscar" layoutX="412.0" layoutY="71.0" mnemonicParsing="false" opacity="0.8" style="-fx-background-color: #FE2E2E;" text="Buscar" textFill="#e8e6e6" />
+      <Button fx:id="btAtualizar" layoutX="252.0" layoutY="320.0" mnemonicParsing="false" opacity="0.8" style="-fx-background-color: #FE2E2E;" text="Atualizar" textFill="#e8e6e6" />
+      <Button fx:id="btExcluir" layoutX="352.0" layoutY="320.0" mnemonicParsing="false" opacity="0.8" prefHeight="25.0" prefWidth="76.0" style="-fx-background-color: #FE2E2E;" text="Excluir" textFill="#e8e6e6" />
+      <Label layoutX="312.0" layoutY="256.0" prefHeight="15.0" prefWidth="46.0" text="Salário" />
+      <TextField fx:id="campoSalario" layoutX="366.0" layoutY="251.0" prefHeight="25.0" prefWidth="131.0" promptText="Digite o salário" />
+      <ComboBox fx:id="cbCargo" layoutX="151.0" layoutY="251.0" prefWidth="150.0" promptText="Tipo de cargo" />
    </children>
 </AnchorPane>

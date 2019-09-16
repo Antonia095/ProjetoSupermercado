@@ -1,4 +1,4 @@
-package com.ifpb.projetoPoo.view;
+/*package com.ifpb.projetoPoo.view;
 
 import com.ifpb.projetoPoo.control.CadastroFuncionarioDaoArquivo;
 import com.ifpb.projetoPoo.enumeration.TipoDeCargo;
@@ -45,3 +45,4 @@ public class App {
         }
     
 }
+*/

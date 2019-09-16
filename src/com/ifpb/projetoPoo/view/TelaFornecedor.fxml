@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #E6E6E6;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ifpb.projetoPoo.controller.TelaFornecedorController">
+   <children>
+      <ImageView fitHeight="242.0" fitWidth="264.0" layoutX="179.0" layoutY="62.0" opacity="0.21" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/imagemFundo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="249.0" layoutY="34.0" text="Fornecedor" textAlignment="CENTER" textFill="#474343eb">
+         <font>
+            <Font name="DejaVu Sans Mono Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="122.0" layoutY="73.0" text="CNPJ" />
+      <Label layoutX="120.0" layoutY="105.0" text="Nome" />
+      <Label layoutX="119.0" layoutY="146.0" text="Email" />
+      <Label layoutX="111.0" layoutY="186.0" text="Endereço" />
+      <Label layoutX="338.0" layoutY="186.0" text="Bairro" />
+      <Label layoutX="338.0" layoutY="146.0" text="Telefone" />
+      <Label layoutX="336.0" layoutY="227.0" text="Estado" />
+      <Label layoutX="115.0" layoutY="261.0" text="Tipo" />
+      <Label layoutX="111.0" layoutY="227.0" text="Cidade" />
+      <TextField fx:id="campoCnpj" layoutX="189.0" layoutY="69.0" promptText="Digite o CNPJ">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="campoNomeFornecedor" layoutX="174.0" layoutY="109.0" prefHeight="23.0" prefWidth="253.0" promptText="Digite o nome">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="campoEndereco" layoutX="181.0" layoutY="182.0" prefHeight="23.0" prefWidth="147.0" promptText="Digite o endereço">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="campoEmail" layoutX="171.0" layoutY="142.0" promptText="Digite o email">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="campoEstado" layoutX="391.0" layoutY="223.0" prefHeight="23.0" prefWidth="133.0" promptText="Digite o estado">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="campoBairro" layoutX="391.0" layoutY="182.0" prefHeight="23.0" prefWidth="133.0" promptText="Digite o bairro">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="campoCidade" layoutX="182.0" layoutY="223.0" prefHeight="23.0" prefWidth="147.0" promptText="Digite a cidade">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="campoTelefone" layoutX="402.0" layoutY="142.0" prefHeight="23.0" prefWidth="117.0" promptText="Digite o telefone">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </TextField>
+      <ComboBox fx:id="comboBoxTipo" layoutX="182.0" layoutY="256.0" prefHeight="25.0" prefWidth="157.0" promptText="Selecione o tipo" />
+      <Button fx:id="ButtonExcluirFornecedor" layoutX="419.0" layoutY="306.0" mnemonicParsing="false" opacity="0.8" prefHeight="25.0" prefWidth="70.0" style="-fx-background-color: #FE2E2E;" text="Excluir" textFill="#f8f3f3" />
+      <Button fx:id="ButtonAtualizarFornecedor" layoutX="278.0" layoutY="306.0" mnemonicParsing="false" opacity="0.8" style="-fx-background-color: #FE2E2E;" text="Atualizar" textFill="#f8f3f3" />
+      <Button fx:id="ButtonCadastrarFornecedor" layoutX="130.0" layoutY="306.0" mnemonicParsing="false" opacity="0.8" style="-fx-background-color: #FE2E2E;" text="Cadastrar" textFill="#f8f3f3" />
+      <Button fx:id="ButtonBuscarFornecedor" layoutX="354.0" layoutY="68.0" mnemonicParsing="false" opacity="0.8" style="-fx-background-color: #FE2E2E;" text="Buscar" textFill="#f8f3f3" />
+   </children>
+</AnchorPane>

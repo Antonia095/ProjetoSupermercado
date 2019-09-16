@@ -7,12 +7,16 @@ import java.util.Objects;
 public class Produto implements Serializable{
     private String codBarra;
     private String nome;
-    private Fornecedor fornecedor;
+    private String fornecedor;
     private double valorUnitario;
-    private TipoDeProduto tipo;
+    private String tipo;
     private int quantidade;
+    
+    public Produto(){
+        
+    }
 
-    public Produto(String codBarra, String nome, Fornecedor fornecedor, double valorUnitario, TipoDeProduto tipo, int quantidade) {
+    public Produto(String codBarra, String nome, String fornecedor, double valorUnitario, String tipo, int quantidade) {
         this.codBarra = codBarra;
         this.nome = nome;
         this.fornecedor = fornecedor;
@@ -37,11 +41,11 @@ public class Produto implements Serializable{
         this.nome = nome;
     }
 
-    public Fornecedor getFornecedor() {
+    public String getFornecedor() {
         return fornecedor;
     }
 
-    public void setFornecedor(Fornecedor fornecedor) {
+    public void setFornecedor(String fornecedor) {
         this.fornecedor = fornecedor;
     }
 
@@ -53,11 +57,11 @@ public class Produto implements Serializable{
         this.valorUnitario = valorUnitario;
     }
 
-    public TipoDeProduto getTipo() {
+    public String getTipo() {
         return tipo;
     }
 
-    public void setTipo(TipoDeProduto tipo) {
+    public void setTipo(String tipo) {
         this.tipo = tipo;
     }
 

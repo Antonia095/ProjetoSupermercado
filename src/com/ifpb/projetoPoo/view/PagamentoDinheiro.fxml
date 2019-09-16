@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane fx:id="painel" prefHeight="316.0" prefWidth="316.0" style="-fx-background-color: #FFFFFF; -fx-border-color: #2E2E2E;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="26.0" layoutY="34.0" text="Total">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="113.0" text="Valor recebido">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="199.0" text="Troco">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="campoTotal" alignment="CENTER" layoutX="123.0" layoutY="25.0" prefHeight="37.0" prefWidth="156.0" style="-fx-background-color: #BDBDBD;" />
+      <TextField fx:id="campoValorRecebido" alignment="CENTER" layoutX="123.0" layoutY="104.0" prefHeight="37.0" prefWidth="156.0" style="-fx-background-color: #BDBDBD;" />
+      <TextField fx:id="campoTroco" alignment="CENTER" layoutX="123.0" layoutY="190.0" prefHeight="37.0" prefWidth="156.0" style="-fx-background-color: #BDBDBD;" />
+   </children>
+</Pane>

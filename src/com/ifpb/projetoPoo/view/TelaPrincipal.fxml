@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="402.0" prefWidth="570.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="com.ifpb.projetoPoo.controller.TelaPrincipalController">
+   <children>
+      <MenuBar prefHeight="29.0" prefWidth="536.0" style="-fx-background-color: #FA5858;">
+        <menus>
+          <Menu mnemonicParsing="false" text="Cadastros">
+            <items>
+              <MenuItem fx:id="itemFuncionario" mnemonicParsing="false" onAction="#actionItemFuncionario" text="Funcionário" />
+                  <MenuItem fx:id="itemFornecedor" mnemonicParsing="false" onAction="#actionItemFornecedor" text="Fornecedor" />
+                  <MenuItem fx:id="itemProduto" mnemonicParsing="false" onAction="#actionItemProduto" text="Produto" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Caixa">
+            <items>
+              <MenuItem fx:id="itemVenda" mnemonicParsing="false" onAction="#actionItemVenda" text="Venda" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <AnchorPane fx:id="anchorPane" layoutY="29.0" prefHeight="373.0" prefWidth="600.0" style="-fx-background-color: #E6E6E6;">
+         <children>
+            <ImageView fitHeight="288.0" fitWidth="280.0" layoutX="151.0" layoutY="28.0" opacity="0.21" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/imagemFundo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Button fx:id="btSair" layoutX="536.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="65.0" style="-fx-background-color: #FA5858;" text="Sair" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="484.0" style="-fx-background-color: #E6E6E6;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="com.ifpb.projetoPoo.controller.CadastroLoginController">
+   <children>
+      <ImageView fitHeight="246.0" fitWidth="296.0" layoutX="119.0" layoutY="77.0" opacity="0.21" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/imagemFundo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="150.0" layoutY="56.0" text="Cadastro de Usuário" textFill="#403d3d">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="campoEmail" layoutX="184.0" layoutY="105.0" prefHeight="28.0" prefWidth="171.0" promptText="Digite seu email" />
+      <Label layoutX="101.0" layoutY="111.0" text="Email" />
+      <Label layoutX="101.0" layoutY="160.0" text="Senha" />
+      <Label layoutX="67.0" layoutY="201.0" text="Confirmar senha" />
+      <PasswordField fx:id="campoSenha" layoutX="184.0" layoutY="154.0" prefHeight="28.0" prefWidth="171.0" promptText="Digite sua senha" />
+      <PasswordField fx:id="campoConfSenha" layoutX="184.0" layoutY="195.0" prefHeight="28.0" prefWidth="171.0" promptText="Confirme a senha" />
+      <Button fx:id="btCadastrarUsuario" layoutX="201.0" layoutY="257.0" mnemonicParsing="false" opacity="0.8" style="-fx-background-color: #FE2E2E;" text="Cadastrar" textFill="#f8f3f3" />
+   </children>
+</AnchorPane>

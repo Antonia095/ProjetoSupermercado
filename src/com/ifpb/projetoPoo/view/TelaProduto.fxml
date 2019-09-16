@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #E6E6E6;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ifpb.projetoPoo.controller.TelaProdutoController">
+   <children>
+      <ImageView fitHeight="268.0" fitWidth="270.0" layoutX="177.0" layoutY="66.0" opacity="0.21" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/imagemFundo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="264.0" layoutY="37.0" text="Produto" textAlignment="CENTER" textFill="#474343eb">
+         <font>
+            <Font name="DejaVu Sans Mono Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="96.0" layoutY="80.0" text="Código de barra" />
+      <Label layoutX="95.0" layoutY="122.0" text="Nome" />
+      <Label layoutX="89.0" layoutY="249.0" text="Preço unitário" />
+      <Label layoutX="96.0" layoutY="169.0" text="Fornecedor" />
+      <Label layoutX="298.0" layoutY="249.0" text="Quantidade" />
+      <Label layoutX="90.0" layoutY="211.0" text="Tipo de produto" />
+      <TextField fx:id="campoCodigoProduto" layoutX="207.0" layoutY="75.0" prefHeight="25.0" prefWidth="174.0" promptText="Digite o código do produto">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="campoNomeProduto" layoutX="207.0" layoutY="117.0" prefHeight="25.0" prefWidth="244.0" promptText="Digite o nome do produto">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="campoNomeFornecedor" layoutX="207.0" layoutY="164.0" prefHeight="25.0" prefWidth="244.0" promptText="Digite o nome do fornecedor">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </TextField>
+      <Button fx:id="ButtonExcluirProduto" layoutX="374.0" layoutY="306.0" mnemonicParsing="false" opacity="0.8" prefHeight="25.0" prefWidth="72.0" style="-fx-background-color: #FE2E2E;" text="Excluir" textFill="#f8f3f3" />
+      <Button fx:id="ButtonCadastrarProduto" layoutX="108.0" layoutY="306.0" mnemonicParsing="false" opacity="0.8" style="-fx-background-color: #FE2E2E;" text="Cadastrar" textFill="#f8f3f3" />
+      <Button fx:id="ButtonBuscarProduto" layoutX="389.0" layoutY="75.0" mnemonicParsing="false" opacity="0.8" style="-fx-background-color: #FE2E2E;" text="Buscar" textFill="#f8f3f3" />
+      <Button fx:id="ButtonAtualizarProduto" layoutX="248.0" layoutY="306.0" mnemonicParsing="false" opacity="0.8" style="-fx-background-color: #FE2E2E;" text="Atualizar" textFill="#f8f3f3" />
+      <TextField fx:id="campoValorUnitarioDeProduto" layoutX="214.0" layoutY="244.0" prefHeight="25.0" prefWidth="63.0">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="campoQuantidadeDeProduto" layoutX="389.0" layoutY="244.0" prefHeight="25.0" prefWidth="63.0">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </TextField>
+      <ComboBox fx:id="comboBoxTipoDeProduto" layoutX="207.0" layoutY="206.0" prefHeight="25.0" prefWidth="158.0" promptText="Selecione o tipo" />
+   </children>
+</AnchorPane>

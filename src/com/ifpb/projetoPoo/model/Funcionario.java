@@ -3,22 +3,26 @@ package com.ifpb.projetoPoo.model;
 import com.ifpb.projetoPoo.enumeration.TipoDeCargo;
 import java.io.Serializable;
 import java.util.Objects;
+import javafx.scene.control.ComboBox;
 
-public class Funcionario implements Serializable {
+public class Funcionario implements Serializable{
     
     private String nome;
     private String cpf;
     private String rg;
-    private int telefone;
+    private String telefone;
     private String endereco;
     private String bairro;
     private String cidade;
-    private TipoDeCargo cargo;
-    private String senha;
+    private String cargo;
+    private float salario;
     
-
-    public Funcionario(String nome, String cpf, String rg, int telefone, String endereco, String bairro, String cidade, TipoDeCargo cargo, String senha) {
+    public Funcionario(){
         
+    }
+
+    public Funcionario(String nome, String cpf, String rg, String telefone, String endereco,
+            String bairro, String cidade, String cargo,float salario) {
         this.nome = nome;
         this.cpf = cpf;
         this.rg = rg;
@@ -27,10 +31,8 @@ public class Funcionario implements Serializable {
         this.bairro = bairro;
         this.cidade = cidade;
         this.cargo = cargo;
-        this.senha = senha;
-        
+        this.salario = salario;
     }
-    
 
     public String getNome() {
         return nome;
@@ -56,11 +58,11 @@ public class Funcionario implements Serializable {
         this.rg = rg;
     }
 
-    public int getTelefone() {
+    public String getTelefone() {
         return telefone;
     }
 
-    public void setTelefone(int telefone) {
+    public void setTelefone(String telefone) {
         this.telefone = telefone;
     }
 
@@ -88,27 +90,28 @@ public class Funcionario implements Serializable {
         this.cidade = cidade;
     }
 
-    public TipoDeCargo getCargo() {
+    public String getCargo() {
         return cargo;
     }
 
-    public void setCargo(TipoDeCargo cargo) {
+    public void setCargo(String cargo) {
         this.cargo = cargo;
     }
 
-    public String getSenha() {
-        return senha;
+
+    public float getSalario() {
+        return salario;
     }
 
-    public void setSenha(String senha) {
-        this.senha = senha;
+    public void setSalario(float salario) {
+        this.salario = salario;
     }
 
     @Override
     public int hashCode() {
         int hash = 7;
-        hash = 47 * hash + Objects.hashCode(this.cpf);
-        hash = 47 * hash + Objects.hashCode(this.rg);
+        hash = 71 * hash + Objects.hashCode(this.cpf);
+        hash = 71 * hash + Objects.hashCode(this.rg);
         return hash;
     }
 
@@ -143,9 +146,11 @@ public class Funcionario implements Serializable {
                 + ", bairro=" + bairro 
                 + ", cidade=" + cidade 
                 + ", cargo=" + cargo 
-                + ", senha=" + senha 
+                + ", salario=" + salario 
                 + '}';
     }
+
+    
     
     
 }
