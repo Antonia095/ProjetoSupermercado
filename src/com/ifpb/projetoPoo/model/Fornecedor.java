@@ -12,9 +12,14 @@ public class Fornecedor {
     private String bairro;
     private String cidade;
     private String estado;
-    private TipoDeProduto produtoFornecido;
+    private String produtoFornecido;
+    
+    public Fornecedor(){
+        
+    }
 
-    public Fornecedor(String cnpj, String nome, String email, int telefone, String endereco, String bairro, String cidade, String estado, TipoDeProduto produtoFornecido) {
+    public Fornecedor(String cnpj, String nome, String email, int telefone, String endereco, String bairro, String cidade, 
+                        String estado, String produtoFornecido) {
         this.cnpj = cnpj;
         this.nome = nome;
         this.email = email;
@@ -90,11 +95,11 @@ public class Fornecedor {
         this.estado = estado;
     }
 
-    public TipoDeProduto getProdutoFornecido() {
+    public String getProdutoFornecido() {
         return produtoFornecido;
     }
 
-    public void setProdutoFornecido(TipoDeProduto produtoFornecido) {
+    public void setProdutoFornecido(String produtoFornecido) {
         this.produtoFornecido = produtoFornecido;
     }
 

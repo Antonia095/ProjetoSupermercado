@@ -74,7 +74,40 @@ public class TelaProdutoController implements Initializable {
          
          });
          
+         ButtonAtualizarProduto.setOnAction((ActionEvent event) -> {
+             try{
+                 if(dao.atualizar(p)){
+                     Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+                               alert.setHeaderText("Produto atualizado");
+                               alert.show();
+                 }else{
+                     Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+                               alert.setHeaderText("Produto não atualizado");
+                               alert.show();
+                 }
+             }catch(IOException | ClassNotFoundException ex) {
+                           Logger.getLogger(TelaProdutoController.class.getName()).log(Level.SEVERE, null, ex);
+                       }
          
+         
+         });
+         ButtonExcluirProduto.setOnAction((ActionEvent event) -> {
+             try{
+                 if(dao.excluir(p)){
+                     Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+                               alert.setHeaderText("Produto excluido");
+                               alert.show();
+                 }else{
+                     Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+                               alert.setHeaderText("Produto não excluido");
+                               alert.show();
+                 }
+             }catch(IOException | ClassNotFoundException ex) {
+                           Logger.getLogger(TelaProdutoController.class.getName()).log(Level.SEVERE, null, ex);
+                       }
+         
+         
+         });
        
     } 
     
