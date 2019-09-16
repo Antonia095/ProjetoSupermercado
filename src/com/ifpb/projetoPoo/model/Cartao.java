@@ -7,10 +7,14 @@ import java.util.Objects;
 public class Cartao implements Serializable{
     private String cpfCliente;
     private String titular;
-    private int numero;
-    private BandeiraCartao bandeira;
+    private String numero;
+    private String bandeira;
+    
+    public Cartao(){
+        
+    }
 
-    public Cartao(String cpfCliente, String titular, int numero, BandeiraCartao bandeira) {
+    public Cartao(String cpfCliente, String titular, String numero, String bandeira) {
         this.cpfCliente = cpfCliente;
         this.titular = titular;
         this.numero = numero;
@@ -33,19 +37,19 @@ public class Cartao implements Serializable{
         this.titular = titular;
     }
 
-    public int getNumero() {
+    public String getNumero() {
         return numero;
     }
 
-    public void setNumero(int numero) {
+    public void setNumero(String numero) {
         this.numero = numero;
     }
 
-    public BandeiraCartao getBandeira() {
+    public String getBandeira() {
         return bandeira;
     }
 
-    public void setBandeira(BandeiraCartao bandeira) {
+    public void setBandeira(String bandeira) {
         this.bandeira = bandeira;
     }
 
